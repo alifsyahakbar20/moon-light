@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Acme", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(#2b1055, #7597de);
+}
+
+header {
+  position: absolute;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  padding: 30px 50px;
+  align-items: center;
+  z-index: 1000;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 30px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-left: 50px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 15px;
+  margin-left: 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+  color: #2b1055;
+  background-color: #fff;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #2b1055, transparent);
+  z-index: 1000;
+}
+
+section img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+section img#moon {
+  mix-blend-mode: screen;
+}
+
+section img#mountains_front {
+  z-index: 10;
+}
+
+section #text {
+  position: absolute;
+  color: #fff;
+  z-index: 9;
+  font-size: 100px;
+  right: -18px;
+}
+
+section #btn {
+  color: #2b1055;
+  position: absolute;
+  text-decoration: none;
+  font-size: 25px;
+  background-color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transform: translateY(100px);
+  z-index: 9;
+}
+
+.desc {
+  position: relative;
+  padding: 100px;
+  background-color: #2b1055;
+}
+
+.desc h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.desc p {
+  font-size: 1.3em;
+  color: #fff;
+}
+
+/* sectio #star {
+  height: 100vh;
+  width: 100%;
+}
+
+#moon {
+  height: 100%;
+  width: 100%;
+}
+
+#mountains_front {
+  top: 0px;
+  height: 100%;
+  width: 100%;
+} */
